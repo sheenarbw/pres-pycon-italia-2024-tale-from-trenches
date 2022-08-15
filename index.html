@@ -8,16 +8,450 @@
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
 
+
+		<link rel="stylesheet" href="dist/theme/black.css"/>
+		<!-- <link rel="stylesheet" href="dist/theme/blood.css"/> -->
+		<!-- <link rel="stylesheet" href="dist/theme/league.css"/> -->
+		<!-- <link rel="stylesheet" href="dist/theme/moon.css"/> -->
+		<!-- <link rel="stylesheet" href="dist/theme/simple.css"/> -->
+		<!-- <link rel="stylesheet" href="dist/theme/sky.css"/> -->
+		<!-- <link rel="stylesheet" href="dist/theme/solarized.css"/> -->
+		
+		<!-- <link rel="stylesheet" href="dist/theme/white.css"/>  -->
+		<!-- <link rel="stylesheet" href="dist/theme/night.css"/> -->
+		
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<h2>
+						Building a dev-focused learner management system with Django
+					</h2>
+					<h3>How we scaled up through COVID #brightsides</h3>
+				</section>
+
+				<section>
+					<h2>
+					  Hi, I'm <a href="mailto:sheena.oconnell@umuzi.org"> Sheena </a>
+					</h2>
+					<table>
+					  <tr>
+						<td style="vertical-align: top">
+						  <ul>
+							<li class="fragment">
+							 sheenarbw on Github 
+							</li>
+							<li class="fragment">
+							  CTO of <a href="http://umuzi.org/">Umuzi</a>
+							</li>
+							<li class="fragment">I build people</li>
+							<li class="fragment">I build tools</li>
+							<li class="fragment">I build management systems</li>
+							@sheena_oconnell
+
+							
+						  </ul>
+						</td>
+						<td width="350" style="vertical-align: middle">
+						  <img
+							src="images/Me no background.png"
+							class="avitar"
+							width="350"
+						  />
+						</td>
+					  </tr>
+					</table>
+				  </section>
+
+
+				  <section>
+					<section>
+					  <h2>Once upon a time, in an apartment block far far away...</h2>
+					  (JeppesTown, Jozi, South Africa)
+					</section>
+					<section>
+					  <img src="images/studio/collage.png" />
+					</section>
+				  </section>
+				  <section>
+					<section>
+					  <img src="images/Umuzi+Logo+with+symbol_white.png" />
+					</section>
+					<section>
+					  <h2>Umuzi</h2>
+					  <ul>
+						<li>means "home" (Sort of)</li>
+						<li class="fragment">Not for profit</li>
+						<li class="fragment">Find high potential young people</li>
+						<li class="fragment">Pay them to learn</li>
+						<li class="fragment">Train them in high value digital skills</li>
+						<li class="fragment">Nationally recognized certification</li>
+						<li class="fragment">Help them get jobs, help them keep jobs</li>
+					  
+						<li class="fragment">Wellness support</li>
+						<li class="fragment">Professionalism</li>
+						<li class="fragment">Financial literacy</li>
+						<li class="fragment">Community</li>
+					</ul>
+
+					</section>
+
+
+					<section>
+					  <h2>Umuzi</h2>
+					  keep? 
+					  <img src="images/stats.png" />
+					</section>
+
+				  </section>
+		  
+				  <section>
+					<section>
+					  <h2>A day in the life...</h2>
+					  <h3>BC (Before Covid)</h3>
+					</section>
+					<section>
+					  Lots of human interaction
+					  <img src="images/studio/human.jpg" />
+					</section>
+		  
+					<section>
+					  Lots of... automating boring stuff
+					  <img src="images/automate-boring-stuff.jpg" />
+					</section>
+		  
+					<section>
+					  Syllabus work
+					  <img
+						src="images/syllabus/collage.png"
+						style="background-color: white; padding: 0.1em"
+					  />
+					</section>
+		  
+					<section>
+					  Students working on work on real stuff
+		  
+					  <img src="images/rec-portal.png" />
+					</section>
+				  </section>
+				  <section
+					style="
+					  background-image: url(images/covid/1024px-Novel_Coronavirus_SARS-CoV-2.jpg);
+					"
+				  >
+					<section>
+					  <h2>And then came COVID</h2>
+					</section>
+				  </section>
+		  
+				  <section>
+					<section>
+					  <h2>🔒 Locking down 🔒</h2>
+					  <ul>
+						<li class="fragment">
+						  250 odd students and a bunch of (also pretty odd) staff on site
+						</li>
+						<li class="fragment">
+						  Computers, insurance, data, medical aid, transport...
+						</li>
+						<li class="fragment">
+						  And most of our junior team mates were heading to "real jobs" in the near future
+						</li>
+					  </ul>
+					  <br /><code class="fragment"> team_size = team_size/2 </code>
+					</section>
+
+					<section>
+					  <h3>Make a plan</h3>
+					  <ul>
+						  <li>Don't let our learners down</li>
+						  <li>Don't let our partners down</li>
+						  <li>Don't go broke - funding dried up</li>
+					  </ul>
+					</section>
+				  </section>
+
+				  <section>
+					<section>
+					  <h3>We needed to change...everything</h3>
+					  <img src="images/fine-dog.gif" height="300" class="fragment" />
+					</section>
+				  </section>
+				  <section>
+					<section>
+					  <h2>And so we built...</h2>
+					</section>
+					<section>
+					  <h3>First there was attendance...</h3>
+					  <img src="images/attendance.png" />
+					</section>
+					<section>
+					  <h3>But what we really care about is productivity</h3>
+		  
+					  <ul>
+						<li class="fragment">Butts in chairs at specific times ❌</li>
+						<li class="fragment">Accountability mechanisms ✅</li>
+						<li class="fragment">Async interactions ✅</li>
+						<li class="fragment">Self-paced learning ✅</li>
+					  </ul>
+					</section>
+				  </section>
+		  
+				  <section>
+					<section>
+					  <h2>We had needs</h2>
+					  <ul>
+						<li class="fragment">Admin, track, and deliver training...</li>
+						<li class="fragment">Report on progress</li>
+						<li class="fragment">Manage multiple learning tracks</li>
+					  </ul>
+					  <br />
+					  <br />
+					  <span class="fragment"> Did we need an LMS? </span>
+					</section>
+		  
+					<section>
+					  <h2>Learner Management System</h2>
+					  <ul>
+						<li class="fragment">
+						  Allows set up of curriculums by filling in forms (rich-text)
+						  <span class="fragment" style="color: orange"
+							>... our syllabus already exists as a hugo static site. Markdown + YAML for the win 
+						  </span>
+						</li>
+						<li class="fragment">
+						  Allows uploading of videos and other resources
+						  <span class="fragment" style="color: orange"
+							>... We can just use Youtube. No need to host big files
+						  </span>
+						</li>
+						<li class="fragment">
+						  Track competencies with assessments and projects
+						  <span class="fragment" style="color: orange"
+							>... Most of the assessment mechanisms aren't built with coders in mind (Git anyone?)
+						  </span>
+						</li>
+						<li class="fragment">
+						  Allow people to move through syllabus, a piece at a time
+						  <span class="fragment" style="color: orange"
+							>... but it doesn't resemble real work</span
+						  >
+						</li>
+					  </ul>
+					</section>
+		  
+					<section>
+					  <h2>We aimed a little higher</h2>
+					  <ul>
+						<li class="fragment">
+						  Integrate with our existnig syllabus without too much
+						  pain/suffering
+						</li>
+		  
+						<li class="fragment">reduce dependency on staff!</li>
+						<li class="fragment">
+						  simulate real work environment as much as possible
+						</li>
+						<li class="fragment">
+						  Promote healthy dev-team habits and practices
+						</li>
+						<li class="fragment">Integrate with Github</li>
+		  
+						<li class="fragment">Measure what matters</li>
+					  </ul>
+					</section>
+		  
+					<section>
+					  <h3>And so we built...</h3>
+					</section>
+				  </section>
+		  
+				  <section>
+					<h2>Introducing Tilde</h2>
+					<section>
+					  Yes, this thing: <br />
+					  <span style="font-size: 5em">~</span> <br />
+					</section>
+		  
+					<section>
+					  <p>Also this thing</p>
+					  <img src="images/tilde/board-tour.gif" height="300" />
+					</section>
+				  </section>
+		  
+				  <section>
+					<section>
+					  <h2>A day in the life...</h2>
+					  <img src="images/tilde/cards.png" />
+					</section>
+		  
+					<section>
+					  <h2>Managing a group</h2>
+					  <img src="images/tilde/group-cards.png" />
+					</section>
+		  
+					<section>
+					  <h2>Admin</h2>
+					  <img src="images/tilde/admin-panel.png" />
+					</section>
+		  
+					<section>
+					  <h2>Data requests and scripting</h2>
+					  <img src="images/tilde/DRF.png" />
+					</section>
+				  </section>
+				  <section>
+					<section>
+					  <h2>Under the hood</h2>
+					</section>
+		  
+					<section>
+					  <h2>Syllabus as code</h2>
+					  <img src="images/tilde/syllabus-as-code.png" height="500" />
+					</section>
+					<section>
+					  <img src="images/tilde/knowledge-graph.png" />
+					</section>
+					<section>
+					  <img
+						src="images/tilde/knowledge-graph-selected.png"
+						style="background-color: white; padding: 0.5em"
+					  />
+					</section>
+					<section>
+					  <img
+						src="images/tilde/knowledge-graph-derived.png"
+						style="background-color: white; padding: 0.5em"
+					  />
+					</section>
+					<section>
+					  <img
+						src="images/tilde/generate-backlog.png"
+						style="background-color: white; padding: 0.5em"
+					  />
+					</section>
+					<section>
+					  <h2>Overall architecture</h2>
+					  <img
+						src="images/tilde/end-to-end.png"
+						style="background-color: white; padding: 0.5em"
+					  />
+					</section>
+		  
+					<section>
+					  <h2>Great success!</h2>
+					  <ul>
+						<li class="fragment">Learners are doing fine - in fact we are doing a better job than we were in the past</li>
+						<li class="fragment">Our staff are doing fine</li>
+						<li class="fragment">
+						  Successfully ran multiple cohorts of learners
+						</li>
+						<li class="fragment">
+							Learners can take part in our selection bootcamps on their cellphones :)
+						</li>
+					  </ul>
+					</section>
+				  </section>
+		  
+				  
+		  
+
+		  
+				  <section>
+					<section>
+					  <h2>Goals ++</h2>
+					  <ul>
+						<li class="fragment">
+						  Make it cheaper and easier to run code schools
+						</li>
+						<li class="fragment">Increase quality of code school output</li>
+						<li class="fragment">
+						  More schools, more grads, more high quality coders
+						</li>
+						<li class="fragment">
+						  Less support needed for junior coders, cheaper to manage
+						</li>
+					  </ul>
+					</section>
+		  
+					<section>
+					  <h2>Collaboration ++</h2>
+					  <ul>
+						<li class="fragment">
+						  collaboration between students and staff of different schools
+						  via main instance
+						</li>
+						<li class="fragment">
+						  Allow other schools to improve on the platform (open source for
+						  the win)
+						</li>
+						<li class="fragment">
+						  Allow other schools to improve on syllabus
+						</li>
+						<li class="fragment">
+						  Allow industry partners to improve on syllabus
+						</li>
+						<li class="fragment">
+						  Easier in for volunteers and mentors across network
+						</li>
+					  </ul>
+					</section>
+		  
+					<section>
+					  <h2>Trust ++</h2>
+					  <ul>
+						<li class="fragment">
+						  Every alt ed code school is different => new industry
+						  partnerships == risky
+						</li>
+						<li class="fragment">
+						  schools can leverage quality checking mechanisms built into
+						  platform
+						</li>
+						<li class="fragment">
+						  Partners get easy access to student stats and reports, see
+						  growth, progress, code
+						</li>
+						<li class="fragment">
+						  Partners get to vet the syllabus, actually look at how outcomes
+						  are proven
+						</li>
+						<li class="fragment">Risk --</li>
+					  </ul>
+					</section>
+				  </section>
+		  
+
+		  
+				  <section>
+					<h2>Linkz</h2>
+					<ul>
+					  
+					  <li>
+						<a href="https://github.com/Umuzi-org/tilde">Tilde repo</a>
+					  </li>
+					  <li>
+						<a href="https://github.com/Umuzi-org/ACN-syllabus"
+						  >Syllabus repo</a
+						>
+					  </li>
+					  <li>
+						<a href="https://www.umuzi.org/">Umuzi</a>
+					  </li>
+					  <li>
+						<a href="https://www.africancoding.network/">ACN homepage</a>
+					  </li>
+					  <li>
+						<a href="https://medium.com/african-coding-network"
+						  >ACN on Medium</a
+						>
+					  </li>
+					</ul>
+				  </section>
 			</div>
 		</div>
 
