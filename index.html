@@ -29,12 +29,10 @@
 			<div class="slides">
 				<section>
 					<h2>
-						Building a dev-focused learner management system with Django
+						A tale from the trenches
 					</h2>
-					<h4>How Django helped us scale up education during COVID lockdown</h4>
+					<h4>How a little non-profit managed to survive and scale up through COVID</h4>
 				</section>
-
-				
 
 				<section>
 					<h2>
@@ -45,16 +43,16 @@
 					  <tr>
 						<td style="vertical-align: top">
 						  <ul>
-							  <li class="fragment">
+							<li class="fragment">
 								  CTO of <a href="http://umuzi.org/">Umuzi</a>
-								</li>
-								
-							<li class="fragment">I build people</li>
-							<li class="fragment">I build tools</li>
-							<li class="fragment">I build management/people systems</li>
-							
-							
-							
+							</li>
+							<li class="fragment">I build effective + efficient remote education systems
+
+								<span class="fragment">== tech + people + syllabus + ux</span>
+							</li>
+							<li class="fragment">Learned to code around 20 years ago 🍌</li>
+							<li class="fragment">Always had a passion for education</li>
+
 						</ul>
 					</td>
 					<td width="350" style="vertical-align: middle">
@@ -67,14 +65,16 @@
 					</td>
 				</tr>
 			</table>
-			<span class="fragment">🧗‍♀️🏕️🧭⛰️🎸🪂</span>
+			<span class="fragment">🧗‍♀️🏕️🧭⛰️🎸🔥🐍</span>
 				  </section>
 
 
 				  <section>
 					<section>
 					  <h2>Once upon a time, in an apartment block far far away...</h2>
-					  (JeppesTown, Jozi, South Africa)
+					  <span class="fragment">
+						  (JeppesTown, Jozi, South Africa)
+					  </span>
 					</section>
 					<section>
 					  <img src="images/studio/collage.png" />
@@ -154,7 +154,8 @@
 
 				  <section
 					style="
-					  background-image: url(images/covid/1024px-Novel_Coronavirus_SARS-CoV-2.jpg);
+					  background-image: url(images/fusion-medical-animation-EAgGqOiDDMg-unsplash.jpg);
+					  background-size: 100% 100%;
 					"
 				  >
 					<section>
@@ -162,19 +163,20 @@
 					  <!-- <h4 style="color: white" class="fragment">everything had to change</h4> -->
 					</section>
 
+					<section>
+						<h3 style="color: white">We needed to change...everything</h3>
+						<!-- <img src="images/fine-dog.gif" height="300" /> -->
+					  </section>
 				</section>
-				<section>
-					<h3>We needed to change...everything</h3>
-					<img src="images/fine-dog.gif" height="300" />
-				  </section>
 		  
-				  <section>
+				  <!-- <section> -->
 					<section>
 					  <h2>🔒 Locking down 🔒</h2>
 					  <ul>
 						<li class="fragment">
 						  250 odd learners and a bunch of (also pretty odd) staff on site
 						</li>
+						<li class="fragment">Continue supporting our learners and partners</li>
 						<li class="fragment">
 						  Computers, insurance, data, medical aid, transport...
 						</li>
@@ -183,21 +185,23 @@
 						  And most of our junior team mates were heading to "real jobs" in the near future
 						</li>
 					  </ul>
-					  <br /><code class="fragment"> team_size = team_size/2 </code>
 					</section>
 
-					<section>
+					<!-- <section>
 					  <h3>Staying alive</h3>
 					  <ul>
 						  <li class="fragment">Don't let our learners down</li>
 						  <li class="fragment">Don't let our funding partners down</li>
 						  <li class="fragment">Don't go broke</li>
 					  </ul>
-					</section>
-				  </section>
+					</section> -->
+				  <!-- </section> -->
 
 				  
 				  <section>
+					<section>
+						<h2>We needed to make sure none of our learners fell through the cracks...</h2>
+					  </section>
 					<section>
 					  <h2>And so we built...</h2>
 					</section>
@@ -206,17 +210,27 @@
 					  <img src="images/attendance.png" />
 					</section>
 					<section>
-					  <h3>Totally insufficient</h3>
+					  <h3>Totally insufficient 🩹</h3>
 		  
 					  <ul>
+						  <li class="fragment">Allow learners to hand in projects</li>
+							<li class="fragment">Track progress + competencies</li>
+							<li class="fragment">Compliant with NQF assessors</li>
+							<li class="fragment">Other obvious school stuff...</li>
+
+					  </ul>
+					  <!-- <ul>
 						<li class="fragment">Butts in chairs at specific times ❌</li>
 						<li class="fragment">Accountability mechanisms ✅</li>
 						<li class="fragment">Async interactions ✅</li>
-						<li class="fragment">Self-paced learning ✅</li>
 						<li class="fragment">Smoke detection ✅</li>
-					  </ul>
+					  </ul> -->
 					</section>
-					
+
+					<!-- <section>
+						<h3>Self-paced learning ✅</h3>
+						
+					</section>				 -->
 				  </section>
 		  
 				  <section>
@@ -225,58 +239,48 @@
 					  
 					  <span>(Learner Management System)</span>
 					</section>
+
+					
 		  
-					<!-- <section>
+					<section>
 					  <h2>Learner Management System</h2>
 					  <ul>
 						<li class="fragment">
-						  Allows set up of curriculums by filling in forms (rich-text / WYSIWYG)
-						  <span class="fragment" style="color: orange"
-							>... our syllabus already exists as a hugo static site. Markdown + YAML for the win 
+						  Allows certain set up of curriculums by filling in forms (rich-text / WYSIWYG)
+						  <span class="fragment" style="color: darkred"
+							>... our syllabus already exists as a hugo static site. Markdown + YAML + Git  
 						  </span>
 						</li>
 						<li class="fragment">
 						  Allows uploading of videos and other resources
-						  <span class="fragment" style="color: orange"
+						  <span class="fragment" style="color: darkred"
 							>... We can just use Youtube. No need to host big files
 						  </span>
 						</li>
-						<li class="fragment">
-						  Track competencies with assessments and projects
-						  <span class="fragment" style="color: orange"
-							>... Most of the assessment mechanisms aren't built with coders in mind (Git anyone?)
-						  </span>
-						</li>
-						<li class="fragment">
-						  Allow people to move through syllabus, a piece at a time
-						  <span class="fragment" style="color: orange"
-							>... but it doesn't resemble real work</span
-						  >
-						</li>
+						<li class="fragment">Fancy pants reports <span class="fragment" style="color: darkred"
+							>... Education comes first
+						  </span></li>				
 					  </ul>
-					</section> -->
+					</section>
 		  
 					<section>
 					  <h2>Our needs</h2>
 					  <ul>
-						<li class="fragment">
-						  Integrate with our existing syllabus git repo without too much
-						  pain/suffering <span class="fragment" style="color: darkred;"
-						  >... no need for rich-text / wysiwyg editing. Git is just better
-						</span>
-						</li>
-		  
-						<li class="fragment">reduce dependency on staff!
+						
+						<li class="fragment">Reduce dependency on staff!
 							<span class="fragment" style="color: darkred"
-							>... Peer to peer learning
-						  </span>
+							>... Peer to peer learning. 
+						</span>
+						<span class="fragment" style="color: darkred">
+							No new bottlenecks
+						</span>
 
 						</li>
 						<li class="fragment">
 						  simulate real work environment as much as possible <span class="fragment" style="color: darkred"
-						  >... Most LMSs are like clever textbooks - not fit for our purpose
+						  >... Most LMSs are like clever textbooks - we make professionals by simulating professional work environment
 						</span>
-						<li class="fragment">Integrate with Github <span class="fragment" style="color: darkred"
+						<li class="fragment">Tech ed as a first class citizen <span class="fragment" style="color: darkred"
 							>... Some LMSs have plugins that could help a little... but pretty limited
 						  </span></li>
 		  
@@ -284,28 +288,101 @@
 						</ul>
 						
 					</section>
-						
-		  
+
 					<section>
-					  <h3>And so we built...</h3>
+						<h2>Self-paced learning</h2>
+						<img src="images/normal dist.png" />
 					</section>
+
+					<section>
+						<h2>Our superpower</h2>
+						We are very innovative in how we teach 
+						<ul>
+							<li class="fragment">Let's not lose that</li>
+							<li class="fragment">Let's not limit future innovation</li>
+						</ul>
+
+					</section>
+
+					<!-- <section>
+						<!-- <ul>
+							<li class="fragment">No LMS did what we needed</li>
+							<li class="fragment">Forcing an off the shelf LMS to do sortof what we wanted would have been a lot of horrible work</li>
+							<li class="fragment">We wanted to retain our ability to innovate around how education happens - if tech ed was easy the landscape would look pretty different</li>
+						</ul> 
+					</section> -->
+						
 				  </section>
+
+				  
+				  <section>
+					  <section>
+						<h2>And so we built... </h2>
+
+						<h3 class="fragment">...what though?</h3>
+
+					  <ul>
+						<li class="fragment">Our syllabus is code</li>
+						<li class="fragment">Kanban is a whole thing</li>
+					  </ul>					
+					</section>
+
+					<section>
+						<h2>Syllabus as code</h2>
+						<img src="images/tilde/syllabus as code light.png" height="500" />
+					  </section>
+
+					  <section>
+						<img src="images/tilde/knowledge-graph.png" />
+					  </section>
+					
+					  <section>
+						<img
+						  src="images/tilde/knowledge-graph-selected.png"
+						  style="background-color: white; padding: 0.5em"
+						/>
+					  </section>
+
+					  <section>
+						<img
+						  src="images/tilde/knowledge-graph-derived.png"
+						  style="background-color: white; padding: 0.5em"
+						/>
+					  </section>
+
+					  <section>
+						<img
+						  src="images/tilde/generate-backlog.png"
+						  style="background-color: white; padding: 0.5em"
+						/>
+					  </section>
+				  </section>
+
+
+				  <section>
+					<h2>Choosing the tech</h2>
+					<ul>
+						<li class="fragment">Django - the web framework for perfectionists with deadlines</li>
+						<li class="fragment">Django REST Framework (DRF) - quick, easy, rock-solid API development</li>
+						<li class="fragment">React frontend</li>
+					</ul>
+				  </section>
+
 		  
 				  <section>
 					<h2>Introducing Tilde</h2>
 					<section>
 					  Yes, this thing: <br />
 					  <span style="font-size: 5em">~</span> <br />
-					  <span >
-
+					  <span class="fragment">
 						  It means "home"... sort of
 					  </span> 
 					</section>
 		  
-					<section>
+					<!-- <section>
 					  <p>Also this thing</p>
 					  <img src="images/tilde/board-tour.gif" height="300" />
-					</section>
+					</section> -->
 				  </section>
 		  
 				  <section> 
@@ -322,7 +399,6 @@
 					<section>
 						<h2>Learners</h2>
 						<h3>
-
 							Repo project cards
 						</h3>
 						<ul>
@@ -386,79 +462,57 @@
 					  <img src="images/tilde/DRF.png" />
 					</section>
 				  </section>
-				  <section>
+				  <!-- <section>
 					<section>
 					  <h2>Under the hood</h2>
 					</section>
 
-
-
-
-
-					
-		  
-					<section>
-					  <h2>Syllabus as code</h2>
-					  <img src="images/tilde/syllabus-as-code.png" height="500" />
-					</section>
-					<section>
-					  <img     src="images/tilde/knowledge-graph.png" />
-					</section>
-					<section>
-					  <img
-						src="images/tilde/knowledge-graph-selected.png"
-						style="background-color: white; padding: 0.5em"
-					  />
-					</section>
-					<section>
-					  <img
-						src="images/tilde/knowledge-graph-derived.png"
-						style="background-color: white; padding: 0.5em"
-					  />
-					</section>
-					<section>
-					  <img
-						src="images/tilde/generate-backlog.png"
-						style="background-color: white; padding: 0.5em"
-					  />
-					</section>
 					<section>
 					  <h2>Overall architecture</h2> 
-					  <!-- <img
-						src="images/tilde/end-to-end.png"
-						style="background-color: white; padding: 0.5em"
-					  /> -->
+					
 					  <img src="images/architecture.drawio.svg"
 					  style="background-color: white; padding: 0.5em"
 					  
 					  />
 					</section>
-		  
-					<section>
-					  <h2>Great success!</h2>
-					  <ul>
-						<li class="fragment">Learners are doing fine - in fact we are doing a better job than we were in the past</li>
-						<li class="fragment">
-						  Successfully ran multiple cohorts of learners
+				</section> -->
+				
+				<section>
+				  <h2>Great success!</h2>
+				  <ul>
+					<li class="fragment">We are better than we were on-prem</li>
+					<li class="fragment">
+						Learners can take part in our selection bootcamps on their cellphones :)
+					</li>
+					<li class="fragment">We are able to remotely teach learners across Africa</li>
+					
+				  </ul>
+				</section>
+
+				<section>
+						<h2>MISSION ++</h2>
+						To reduce social inequality in Africa through digital education
+				</section>
+
+				<section>
+					<h2>Takeaways</h2>
+					<ul>
+						<li class="fragment">Django saves lives, try it out (especially if you hate ORMs)</li>
+
+						<li class="fragment">Build-it-yourself versus off the shelf: 
+							<ul>
+								<li class="fragment">
+									Do you even need the advertised features?
+								</li>
+								<li class="fragment">Will you retain your ability to innovate? Do you need to?</li>
+							</ul>
 						</li>
-						<li class="fragment">
-							Learners can take part in our selection bootcamps on their cellphones :)
-						</li>
-						<li class="fragment">We have learners in Kenya and Nigeria</li>
-					  </ul>
-					</section>
-
-				  </section>
-		  
-				  
+					</ul>
+				</section>
 		  
 
 		  
-				 
-		  
-
-		  
-				  <section>
+				  <!-- <section>
 					<h2>Links</h2>
 
 
@@ -500,7 +554,7 @@
 					  </table>
 
 			
-				  </section>
+				  </section> -->
 			</div>
 		</div>
 
