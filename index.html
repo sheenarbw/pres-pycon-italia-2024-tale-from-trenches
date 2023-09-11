@@ -18,11 +18,17 @@
 		<!-- <link rel="stylesheet" href="dist/theme/sky.css"/> -->
 		<!-- <link rel="stylesheet" href="dist/theme/solarized.css"/> -->
 		
-		<link rel="stylesheet" href="dist/theme/white.css"/> 
+		<!-- <link rel="stylesheet" href="dist/theme/white.css"/>  -->
 		<!-- <link rel="stylesheet" href="dist/theme/night.css"/> -->
 		
 		<!-- Theme used for syntax highlighted code -->
 		<!-- <link rel="stylesheet" href="plugin/highlight/monokai.css"> -->
+
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+
+		<link rel="stylesheet" href="umuzi-branding/theme.css"/>
+
+		
 	</head>
 	<body>
 		<div class="reveal">
@@ -47,7 +53,6 @@
 								  CTO of <a href="http://umuzi.org/">Umuzi</a>
 							</li>
 							<li class="fragment">I build effective + efficient remote education systems
-
 								<span class="fragment">== tech + people + syllabus + ux</span>
 							</li>
 							<li class="fragment">Learned to code around 20 years ago 🍌</li>
@@ -85,11 +90,14 @@
 					<section>
 					  <h2>Umuzi</h2>
 					  <img src="images/umuzi.png" />
+					  <br/>
+					  <span class="fragment">
+						It means "home"... sort of
+					</span> 
 					</section>
 					<section>
 					  <h2>Umuzi</h2>
 					  <ul>
-						<li>It means "home"... sort of</li>
 						<li class="fragment">Non-profit training provider</li>
 						<li class="fragment">Find high potential un/der employed youth</li>
 						<li class="fragment">Pay them to learn</li>
@@ -98,11 +106,6 @@
 						<li class="fragment">Help alumni get and keep jobs</li>
 					  </ul>
 					  </section>
-
-					  <!-- <section>
-						<h2>Learner Journey</h2>
-						  <img src="images/funnel.drawio.svg"/>
-						</section> -->
 
 
 					  <section>
@@ -159,17 +162,17 @@
 					"
 				  >
 					<section>
-					  <h2 style="color: white">And then came COVID</h2>
+					  <h2 style="color: white; background-color: #ff812c;">And then came COVID</h2>
 					  <!-- <h4 style="color: white" class="fragment">everything had to change</h4> -->
 					</section>
 
 					<section>
-						<h3 style="color: white">We needed to change...everything</h3>
+						<h3 style="color: white; background-color: #ff812c;" >We needed to change...everything</h3>
 						<!-- <img src="images/fine-dog.gif" height="300" /> -->
 					  </section>
 
 					  <section>
-						<h3 style="color: white">Stay true to our core</h3>
+						<h3 style="color: white; background-color: #ff812c;">Stay true to our core</h3>
 						<!-- <img src="images/fine-dog.gif" height="300" /> -->
 					  </section>
 				</section>
@@ -181,7 +184,8 @@
 						<li class="fragment">
 						  250 odd learners and a bunch of (also pretty odd) staff on site
 						</li>
-						<li class="fragment">Continue supporting our learners and partners</li>
+						<li class="fragment">Continue supporting our learners</li>
+						<li class="fragment">Don't let funding partners down</li>
 						<li class="fragment">
 						  Computers, insurance, data, medical aid, transport...
 						</li>
@@ -252,17 +256,17 @@
 					  <ul>
 						<li class="fragment">
 						  Allows certain set up of curriculums by filling in forms (rich-text / WYSIWYG)
-						  <span class="fragment" style="color: darkred"
+						  <span class="fragment" style="color: #ff812c"
 							>... our syllabus already exists as a hugo static site. Markdown + YAML + Git  
 						  </span>
 						</li>
 						<li class="fragment">
 						  Allows uploading of videos and other resources
-						  <span class="fragment" style="color: darkred"
+						  <span class="fragment" style="color: #ff812c"
 							>... We can just use Youtube. No need to host big files
 						  </span>
 						</li>
-						<li class="fragment">Fancy pants reports <span class="fragment" style="color: darkred"
+						<li class="fragment">Fancy pants reports <span class="fragment" style="color: #ff812c"
 							>... Education comes first
 						  </span></li>				
 					  </ul>
@@ -273,17 +277,17 @@
 					  <ul>
 						
 						<li class="fragment">Reduce dependency on staff!
-							<span class="fragment" style="color: darkred"
-							>... Peer to peer learning. 
+							<span class="fragment" style="color: #ff812c"
+							>... Peer to peer learning + automation
 						</span>
 						
 
 						</li>
 						<li class="fragment">
-						  simulate real work environment as much as possible <span class="fragment" style="color: darkred"
+						  simulate real work environment as much as possible <span class="fragment" style="color: #ff812c"
 						  >... Most LMSs are like clever textbooks - we make professionals by simulating professional work environment
 						</span>
-						<li class="fragment">Tech ed as a first class citizen <span class="fragment" style="color: darkred"
+						<li class="fragment">Tech ed as a first class citizen <span class="fragment" style="color: #ff812c"
 							>... Some LMSs have plugins that could help a little... but pretty limited
 						  </span></li>
 		  
@@ -363,12 +367,35 @@
 
 
 				  <section>
-					<h2>Choosing the tech</h2>
-					<ul>
-						<li class="fragment">Django - the web framework for perfectionists with deadlines</li>
-						<li class="fragment">Django REST Framework (DRF) - quick, easy, rock-solid API development</li>
-						<li class="fragment">React frontend</li>
-					</ul>
+					<section>
+
+						<h2>Choosing the tech</h2>
+						
+						<ul>
+							<li class="fragment">Needed to build FAST</li>
+							<li class="fragment">Support 250 learners immediately</li>
+							<li class="fragment">Modern frontend technologies</li>
+							<li class="fragment">What will our future team look like?</li>
+						</ul>
+					</section>
+					
+					<section>
+						<h2>Choosing the tech</h2>
+						
+						<img src="images/tilde/tech_stack.drawio.svg" style="background-color: #FFF; padding: 0.5em;"/>
+						
+					</section>
+
+					<section>
+						<h2>Django</h2>
+						<ul>
+							<li class="fragment">The framework for perfectionists with deadlines</li>
+							<li class="fragment">Batteries included</li>
+							<li class="fragment">ORM at the core</li>
+							<li class="fragment">Define tables, then most of everything else is configuration</li>
+						</ul>
+					</section>
+
 				  </section>
 
 		  
@@ -382,10 +409,7 @@
 					  </span> 
 					</section>
 		  
-					<!-- <section>
-					  <p>Also this thing</p>
-					  <img src="images/tilde/board-tour.gif" height="300" />
-					</section> -->
+					
 				  </section>
 		  
 				  <section> 
@@ -406,8 +430,6 @@
 						</h3>
 						<ul>
 							<li class="fragment">Card in backlog, learner chooses to start</li>
-
-
 							<li class="fragment">Backend... <ul>
 
 								<li class="fragment">Create Github repo</li>
@@ -432,19 +454,19 @@
 						<h3>Interpreting bouncy cards</h3>
 						<ul>
 							<li class="fragment">If many learners approve and a trusted reviewer doesn't
-								<span class="fragment" style="color: darkred">
+								<span class="fragment" style="color: #ff812c">
 								knowledge gap to be plugged</span></li>
 							<li class="fragment">If a learner has one extra bouncy card 
-								<span class="fragment" style="color: darkred">
+								<span class="fragment" style="color: #ff812c">
 									They need help</span></li>
 							<li class="fragment">If a specific project always leads to extra bouncy cards
-								<span class="fragment" style="color: darkred">
+								<span class="fragment" style="color: #ff812c">
 									revise project spec</span></li>
 							<li class="fragment">If a specific reviewer always involved in bounciness
-								<span class="fragment" style="color: darkred">
+								<span class="fragment" style="color: #ff812c">
 									intervene</span></li>
 							<li class="fragment">If a specific learner's cards just tend to be bouncier
-								<span class="fragment" style="color: darkred">
+								<span class="fragment" style="color: #ff812c">
 									allocate support early</span></li>
 						</ul>
 					</section>
@@ -455,13 +477,23 @@
 				    </section>
 		  
 					<section>
-					  <h2>Admin</h2>
+					  <h2>Admin code</h2>
 					  <img src="images/tilde/admin-panel.png" />
+					</section>
+
+					<section>
+						<h2>Admin</h2>
+						<img src="images/django-admin-code.png" />
 					</section>
 		  
 					<section>
-					  <h2>Data requests and scripting</h2>
+					  <h2>Devs</h2>
 					  <img src="images/tilde/DRF.png" />
+					</section>
+
+					<section>
+						<h2>DRF code</h2>
+						<img src="images/serializer-code.png" />
 					</section>
 				  </section>
 				  <!-- <section>
@@ -496,7 +528,7 @@
 						To reduce social inequality in Africa through digital education
 				</section>
 
-				<section>
+				<!-- <section>
 					<h2>Takeaways</h2>
 					<ul>
 						<li class="fragment">Django saves lives, try it out (especially if you hate ORMs)</li>
@@ -510,7 +542,7 @@
 							</ul>
 						</li>
 					</ul>
-				</section>
+				</section> -->
 		  
 
 		  
