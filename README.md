@@ -1,4 +1,4 @@
-Live presentation can be seen [here](https://sheenarbw.github.io/pres-escape-2023/).
+Live presentation can be seen [here](https://sheenarbw.github.io/pres-djangoconf-africa-2023/).
 
 Once upon a time, there was a little non-profit called Umuzi. Umuzi was an in-person training provider, focused on creating opportunities for high-potential, under-served youth. We trained hundreds of people in our cosy studios in Jeppestown.
 
